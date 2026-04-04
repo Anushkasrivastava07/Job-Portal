@@ -38,5 +38,5 @@ searchInput.addEventListener("keyup", () => {
     displayJobs(filtered);
 });
 
-// Initial load
+
 displayJobs(jobs);
