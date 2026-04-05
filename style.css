@@ -43,3 +43,9 @@ button {
 button:hover {
     background-color: darkblue;
 }
+
+.job-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+
+}
