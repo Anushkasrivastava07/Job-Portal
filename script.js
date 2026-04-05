@@ -1,7 +1,8 @@
 const jobs = [
     { title: "Frontend Developer", company: "ABC Pvt Ltd" },
     { title: "Backend Developer", company: "XYZ Ltd" },
-    { title: "Full Stack Developer", company: "Tech Corp" }
+    { title: "Full Stack Developer", company: "Tech Corp" },
+    { title: "UI/UX Designer", company: "Creative Designer" }
 ];
 
 const jobList = document.getElementById("job-list");
