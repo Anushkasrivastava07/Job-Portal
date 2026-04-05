@@ -1,8 +1,8 @@
 const jobs = [
-    { title: "Frontend Developer", company: "ABC Pvt Ltd" },
-    { title: "Backend Developer", company: "XYZ Ltd" },
-    { title: "Full Stack Developer", company: "Tech Corp" },
-    { title: "UI/UX Designer", company: "Creative Designer" }
+    { title: "Frontend Developer", company: "ABC Pvt Ltd",location: "Delhi", salary: "5 lpa" },
+    { title: "Backend Developer", company: "XYZ Ltd" ,location: "Banglore", salary: "6 lpa"},
+    { title: "Full Stack Developer", company: "Tech Corp",location: "Remote", salary: "8 lpa" },
+    { title: "UI/UX Designer", company: "Creative Designer",location: "Mumbai", salary: "4 lpa" }
 ];
 
 const jobList = document.getElementById("job-list");
@@ -18,6 +18,8 @@ function displayJobs(jobArray) {
         div.innerHTML = `
             <h3>${job.title}</h3>
             <p>${job.company}</p>
+            <p>${job.location}</p>
+            p>${job.salary}</p>
             <button onclick="applyJob('${job.title}')">Apply</button>
         `;
 
@@ -26,7 +28,7 @@ function displayJobs(jobArray) {
 }
 
 function applyJob(title) {
-    alert("Applied for " + title);
+    alert(" You have successfully applied for " + title);
 }
 
 searchInput.addEventListener("keyup", () => {
@@ -39,5 +41,7 @@ searchInput.addEventListener("keyup", () => {
     displayJobs(filtered);
 });
 
-
 displayJobs(jobs);
+
+const filtered = jobs.filter(job => job.title.toLowerCase().includes(value)) || job.company.toLowerCase().includes(value);
+
