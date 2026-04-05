@@ -19,7 +19,7 @@ function displayJobs(jobArray) {
             <h3>${job.title}</h3>
             <p>${job.company}</p>
             <p>${job.location}</p>
-            p>${job.salary}</p>
+            <p>${job.salary}</p>
             <button onclick="applyJob('${job.title}')">Apply</button>
         `;
 
