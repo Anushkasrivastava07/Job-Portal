@@ -27,27 +27,17 @@ function displayJobs(jobArray) {
     });
 }
 
-function applyJob(title) {
-    alert(" You have successfully applied for " + title);
-}
-
 searchInput.addEventListener("keyup", () => {
     const value = searchInput.value.toLowerCase();
 
     const filtered = jobs.filter(job =>
-        job.title.toLowerCase().includes(value)
+        job.title.toLowerCase().includes(value) ||
+        job.company.toLowerCase().includes(value)
     );
 
     displayJobs(filtered);
 });
 
-displayJobs(jobs);
-
-const filtered = jobs.filter(job =>
-job.title.toLowerCase().includes(value)) || 
-
-job.company.toLowerCase().includes(value);
-<button onclick="openPopup('${job.title}')">Apply</button>
 function openPopup(title) {
     document.getElementById("popup").style.display = "block";
 }
@@ -61,5 +51,7 @@ function submitForm() {
     closePopup();
 }
 
+// initial load
+displayJobs(jobs);
 
 
