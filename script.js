@@ -43,5 +43,23 @@ searchInput.addEventListener("keyup", () => {
 
 displayJobs(jobs);
 
-const filtered = jobs.filter(job => job.title.toLowerCase().includes(value)) || job.company.toLowerCase().includes(value);
+const filtered = jobs.filter(job =>
+job.title.toLowerCase().includes(value)) || 
+
+job.company.toLowerCase().includes(value);
+<button onclick="openPopup('${job.title}')">Apply</button>
+function openPopup(title) {
+    document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+function submitForm() {
+    alert("Application Submitted!");
+    closePopup();
+}
+
+
 
