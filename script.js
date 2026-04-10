@@ -11,8 +11,10 @@ const jobs = [
     { title: "HR Intern", company: "TalentHive", location: "Bangalore", salary: "7 LPA" },
     { title: "Devops Engineer", company: "SkyNet Cloud",location: "Mumbai", salary: "9 lpa" }, 
     { title: "Product Engineer", company: "Growth Bridge",location: "Delhi", salary: "9 lpa" }, 
-    { title: "Support Engineer", company: "Help Desk Pro",location: "Noida", salary: "7 lpa" } 
-    
+    { title: "Support Engineer", company: "Help Desk Pro",location: "Noida", salary: "7 lpa" },
+    { title: "Android Developer", company: "AppWorks", location: "Chennai", salary: "8 LPA" },
+    { title: "Cyber Security Intern", company: "SecureTech", location: "Pune", salary: "6 LPA" }
+ 
 ];
 
 // Popup functions (GLOBAL)
