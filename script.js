@@ -8,7 +8,11 @@ const jobs = [
     { title: "Python Developer", company: "SoftLink Technologies", location: "Gurgaon", salary: "9 LPA" },
     { title: "QA Tester", company: "QualityFirst Tech", location: "Hyderabad", salary: "7 LPA" },
     { title: "DevOps Engineer", company: "SkyNet Cloud", location: "Mumbai", salary: "9 LPA" },
-    { title: "HR Intern", company: "TalentHive", location: "Bangalore", salary: "7 LPA" }
+    { title: "HR Intern", company: "TalentHive", location: "Bangalore", salary: "7 LPA" },
+    { title: "Devops Engineer", company: "SkyNet Cloud",location: "Mumbai", salary: "9 lpa" }, 
+    { title: "Product Engineer", company: "Growth Bridge",location: "Delhi", salary: "9 lpa" }, 
+    { title: "Support Engineer", company: "Help Desk Pro",location: "Noida", salary: "7 lpa" } 
+    
 ];
 
 // Popup functions (GLOBAL)
